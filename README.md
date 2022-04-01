@@ -1,0 +1,2 @@
+# com.krabs.clockworks.sdPlugin
+ 
