@@ -1,0 +1,33 @@
+{
+  "Name": "Clockworks",
+  "Category": "Krabs - Clockworks",
+  "Description": "",
+
+    "com.krabs.discordmessenger.simple":
+    {
+        "Name": "Discord Messenger - Simple Message",
+        "Tooltip": "Discord Messenger - Simple Message"
+    },
+    "com.krabs.discordmessenger.custom":
+    {
+        "Name": "Discord Messenger - Custom Embed",
+        "Tooltip": "Discord Messenger - Custom Embed"
+    },
+    "com.krabs.discordmessenger.twitch":
+    {
+        "Name": "Discord Messenger - Twitch Now Streaming",
+        "Tooltip": "Discord Messenger - Twitch Now Streaming"
+    },
+    "com.krabs.discordmessenger.youtube":
+    {
+        "Name": "Discord Messenger - YouTube Video",
+        "Tooltip": "Discord Messenger - YouTube Video"
+    },
+    "com.krabs.discordmessenger.twitter":
+    {
+        "Name": "Discord Messenger - Twitter Post",
+        "Tooltip": "Discord Messenger - Twitter Post"
+    },
+    "Localization": {
+    }
+}

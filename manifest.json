@@ -1,0 +1,112 @@
+{
+    "Actions": [
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Large - 12 Hour - Digit 1",
+            "States": [
+                {
+                  "Image": "resources/images/Icon",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.hour12_large_digit1"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Large - 12 Hour - Digit 2",
+            "States": [
+                {
+                  "Image": "resources/images/Icon",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.hour12_large_digit2"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Large - 24 Hour - Digit 1",
+            "States": [
+                {
+                  "Image": "resources/images/Icon",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.hour24_large_digit1"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Large - 24 Hour - Digit 2",
+            "States": [
+                {
+                  "Image": "resources/images/Icon",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.hour24_large_digit2"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Seperator - Large",
+            "States": [
+                {
+                  "Image": "resources/images/Icon",
+                  "Title": ":",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.SeperatorLarge"
+        }
+    ],
+
+    "SDKVersion": 2,
+    "Author": "Krabs",
+    "Category": "Krabs - Clockworks",
+    "CategoryIcon": "resources/images/categoryIcon",
+    "CodePath": "clockworks.html",
+    "Description": "Clockworks, make your own clock. Full screen or Partial screen.",
+    "Name": "Clockworks",
+    "Icon": "resources/images/pluginIcon",
+    "URL": "https://www.krabs.me/streamdeck-plugins",
+    "Version": "1.0.1",
+    "OS": [
+        { "Platform": "windows", "MinimumVersion": "10" },
+        { "Platform": "mac", "MinimumVersion": "10.11" }
+    ],
+    "Software": { "MinimumVersion": "5.0" },
+    "DefaultWindowSize": [436, 768]
+}
