@@ -5,7 +5,7 @@
             "Name": "Large - 12 Hour - Digit 1",
             "States": [
                 {
-                  "Image": "resources/images/Icon",
+                  "Image": "resources/images/transparent",
                   "TitleAlignment": "center",
                   "FontFamily": "Arial",
                   "TitleColor": "#ffffff",
@@ -23,7 +23,7 @@
             "Name": "Large - 12 Hour - Digit 2",
             "States": [
                 {
-                  "Image": "resources/images/Icon",
+                  "Image": "resources/images/transparent",
                   "TitleAlignment": "center",
                   "FontFamily": "Arial",
                   "TitleColor": "#ffffff",
@@ -41,7 +41,7 @@
             "Name": "Large - 24 Hour - Digit 1",
             "States": [
                 {
-                  "Image": "resources/images/Icon",
+                  "Image": "resources/images/transparent",
                   "TitleAlignment": "center",
                   "FontFamily": "Arial",
                   "TitleColor": "#ffffff",
@@ -59,7 +59,7 @@
             "Name": "Large - 24 Hour - Digit 2",
             "States": [
                 {
-                  "Image": "resources/images/Icon",
+                  "Image": "resources/images/transparent",
                   "TitleAlignment": "center",
                   "FontFamily": "Arial",
                   "TitleColor": "#ffffff",
@@ -74,11 +74,10 @@
         },
         {
             "Icon": "resources/images/actionIcon",
-            "Name": "Seperator - Large",
+            "Name": "Large - Minute - Digit 1",
             "States": [
                 {
-                  "Image": "resources/images/Icon",
-                  "Title": ":",
+                  "Image": "resources/images/transparent",
                   "TitleAlignment": "center",
                   "FontFamily": "Arial",
                   "TitleColor": "#ffffff",
@@ -89,7 +88,295 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.SeperatorLarge"
+            "UUID": "com.krabs.clockworks.minute_large_digit1"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Large - Minute - Digit 2",
+            "States": [
+                {
+                  "Image": "resources/images/transparent",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.minute_large_digit2"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Large - Second - Digit 1",
+            "States": [
+                {
+                  "Image": "resources/images/transparent",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.second_large_digit1"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Large - Second - Digit 2",
+            "States": [
+                {
+                  "Image": "resources/images/transparent",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.second_large_digit2"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Large - AM / PM Indicator",
+            "States": [
+                {
+                  "Image": "resources/images/transparent",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.large_ampm"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Medium - AM / PM Indicator",
+            "States": [
+                {
+                  "Image": "resources/images/transparent",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.medium_ampm"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Large - Seperator ( : )",
+            "States": [
+                {
+                  "Image": "resources/images/transparent",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.large_seperator_colon"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Large - Seperator ( - )",
+            "States": [
+                {
+                  "Image": "resources/images/transparent",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.large_seperator_dash"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Large - Seperator ( . )",
+            "States": [
+                {
+                  "Image": "resources/images/transparent",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.large_seperator_dot"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Large - Seperator ( / )",
+            "States": [
+                {
+                  "Image": "resources/images/transparent",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.large_seperator_slash"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Medium - Seperator ( : )",
+            "States": [
+                {
+                  "Image": "resources/images/transparent",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.medium_seperator_colon"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Medium - Seperator ( - )",
+            "States": [
+                {
+                  "Image": "resources/images/transparent",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.medium_seperator_dash"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Medium - Seperator ( . )",
+            "States": [
+                {
+                  "Image": "resources/images/transparent",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.medium_seperator_dot"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Medium - Seperator ( / )",
+            "States": [
+                {
+                  "Image": "resources/images/transparent",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.medium_seperator_slash"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Medium - 12 Hour - 2 Digit",
+            "States": [
+                {
+                  "Image": "resources/images/transparent",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.hour12_medium"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Medium - Minutes - 2 Digit",
+            "States": [
+                {
+                  "Image": "resources/images/transparent",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.minute_medium"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Medium - Seconds - 2 Digit",
+            "States": [
+                {
+                  "Image": "resources/images/transparent",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.seconds_medium"
         }
     ],
 

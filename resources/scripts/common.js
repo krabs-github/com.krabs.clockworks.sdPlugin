@@ -560,7 +560,7 @@ Utils.getDataUriWithOverlay = function (url, callback, inCanvas, inFillcolor, vO
     image.src = url;
 };
 
-Utils.getDataUri = function (url, callback, inCanvas, inFillcolor, vFilter, vText) {
+Utils.getDataUri = function (url, callback, inCanvas, inFillcolor, vOverlay, vFilter, vTextPayload) {
     var image = new Image();
 
     image.onload = function () {
@@ -585,6 +585,22 @@ Utils.getDataUri = function (url, callback, inCanvas, inFillcolor, vFilter, vTex
         // Get raw image data
         // callback && callback(canvas.toDataURL('image/png').replace(/^data:image\/(png|jpg);base64,/, ''));
         // ... or get as Data URI
+
+        // Begin Overlay
+        if (vOverlay) {
+          eval(vOverlay);
+        }
+
+        if (vTextPayload) {
+            ctx.save();
+            ctx.font = vTextPayload.font;
+            ctx.textBaseline = vTextPayload.textBaseline;
+            ctx.textAlign = vTextPayload.textAlign          
+            ctx.fillStyle = vTextPayload.fillStyle;
+            ctx.fillText(vTextPayload.text, vTextPayload.x, vTextPayload.y);
+            ctx.restore();
+        }
+
         callback(canvas.toDataURL('image/png'));
     };
 
