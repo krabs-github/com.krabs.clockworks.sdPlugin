@@ -326,6 +326,24 @@
         },
         {
             "Icon": "resources/images/actionIcon",
+            "Name": "Blank - Seperator",
+            "States": [
+                {
+                  "Image": "resources/images/transparent",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.seperator_blank"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
             "Name": "Medium - 12 Hour - 2 Digit",
             "States": [
                 {
@@ -341,6 +359,24 @@
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.hour12_medium"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Medium - 24 Hour - 2 Digit",
+            "States": [
+                {
+                  "Image": "resources/images/transparent",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.hour24_medium"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -377,6 +413,132 @@
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.seconds_medium"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Month - Number",
+            "States": [
+                {
+                  "Image": "resources/images/transparent",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.month_medium_number"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Month - Name (3 Chars)",
+            "States": [
+                {
+                  "Image": "resources/images/transparent",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.month_medium_short"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Day - Number",
+            "States": [
+                {
+                  "Image": "resources/images/transparent",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.day_medium_number"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Day - Name (3 Chars)",
+            "States": [
+                {
+                  "Image": "resources/images/transparent",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.day_medium_short"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Year - First 2 Digits",
+            "States": [
+                {
+                  "Image": "resources/images/transparent",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.medium_year_digits_first2"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Year - Last 2 Digits",
+            "States": [
+                {
+                  "Image": "resources/images/transparent",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.medium_year_digits_last2"
+        },
+        {
+            "Icon": "resources/images/actionIcon",
+            "Name": "Year - 4 Digits",
+            "States": [
+                {
+                  "Image": "resources/images/transparent",
+                  "TitleAlignment": "center",
+                  "FontFamily": "Arial",
+                  "TitleColor": "#ffffff",
+                  "FontStyle": "Bold",
+                  "FontSize": "48"
+                }
+              ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "action1",
+            "PropertyInspectorPath": "PI/generic_pi.html",
+            "UUID": "com.krabs.clockworks.mediumm_year_4_digits"
         }
     ],
 
