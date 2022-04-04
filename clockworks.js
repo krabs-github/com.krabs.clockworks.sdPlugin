@@ -81,27 +81,27 @@ function connected(jsn) {
 
 //------------------------------------------------------------------------------
 
-// seconds medium
-$SD.on('com.krabs.clockworks.month_medium_number.willAppear', jsonObj => month_medium_number.onWillAppear(jsonObj));
-$SD.on('com.krabs.clockworks.month_medium_number.didReceiveSettings', jsonObj => month_medium_number.onDidReceiveSettings(jsonObj));
-// seconds medium
-$SD.on('com.krabs.clockworks.month_medium_short.willAppear', jsonObj => month_medium_short.onWillAppear(jsonObj));
-$SD.on('com.krabs.clockworks.month_medium_short.didReceiveSettings', jsonObj => month_medium_short.onDidReceiveSettings(jsonObj));
-// seconds medium
-$SD.on('com.krabs.clockworks.day_medium_number.willAppear', jsonObj => day_medium_number.onWillAppear(jsonObj));
-$SD.on('com.krabs.clockworks.day_medium_number.didReceiveSettings', jsonObj => day_medium_number.onDidReceiveSettings(jsonObj));
-// seconds medium
-$SD.on('com.krabs.clockworks.day_medium_short.willAppear', jsonObj => day_medium_short.onWillAppear(jsonObj));
-$SD.on('com.krabs.clockworks.day_medium_short.didReceiveSettings', jsonObj => day_medium_short.onDidReceiveSettings(jsonObj));
-// seconds medium
-$SD.on('com.krabs.clockworks.medium_year_digits_first2.willAppear', jsonObj => medium_year_digits_first2.onWillAppear(jsonObj));
-$SD.on('com.krabs.clockworks.medium_year_digits_first2.didReceiveSettings', jsonObj => medium_year_digits_first2.onDidReceiveSettings(jsonObj));
-// seconds medium
-$SD.on('com.krabs.clockworks.medium_year_digits_last2.willAppear', jsonObj => medium_year_digits_last2.onWillAppear(jsonObj));
-$SD.on('com.krabs.clockworks.medium_year_digits_last2.didReceiveSettings', jsonObj => medium_year_digits_last2.onDidReceiveSettings(jsonObj));
-// seconds medium
-$SD.on('com.krabs.clockworks.mediumm_year_4_digits.willAppear', jsonObj => mediumm_year_4_digits.onWillAppear(jsonObj));
-$SD.on('com.krabs.clockworks.mediumm_year_4_digits.didReceiveSettings', jsonObj => mediumm_year_4_digits.onDidReceiveSettings(jsonObj));
+    // seconds medium
+    $SD.on('com.krabs.clockworks.month_medium_number.willAppear', jsonObj => month_medium_number.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.month_medium_number.didReceiveSettings', jsonObj => month_medium_number.onDidReceiveSettings(jsonObj));
+    // seconds medium
+    $SD.on('com.krabs.clockworks.month_medium_short.willAppear', jsonObj => month_medium_short.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.month_medium_short.didReceiveSettings', jsonObj => month_medium_short.onDidReceiveSettings(jsonObj));
+    // seconds medium
+    $SD.on('com.krabs.clockworks.day_medium_number.willAppear', jsonObj => day_medium_number.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.day_medium_number.didReceiveSettings', jsonObj => day_medium_number.onDidReceiveSettings(jsonObj));
+    // seconds medium
+    $SD.on('com.krabs.clockworks.day_medium_short.willAppear', jsonObj => day_medium_short.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.day_medium_short.didReceiveSettings', jsonObj => day_medium_short.onDidReceiveSettings(jsonObj));
+    // seconds medium
+    $SD.on('com.krabs.clockworks.medium_year_digits_first2.willAppear', jsonObj => medium_year_digits_first2.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.medium_year_digits_first2.didReceiveSettings', jsonObj => medium_year_digits_first2.onDidReceiveSettings(jsonObj));
+    // seconds medium
+    $SD.on('com.krabs.clockworks.medium_year_digits_last2.willAppear', jsonObj => medium_year_digits_last2.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.medium_year_digits_last2.didReceiveSettings', jsonObj => medium_year_digits_last2.onDidReceiveSettings(jsonObj));
+    // seconds medium
+    $SD.on('com.krabs.clockworks.mediumm_year_4_digits.willAppear', jsonObj => mediumm_year_4_digits.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.mediumm_year_4_digits.didReceiveSettings', jsonObj => mediumm_year_4_digits.onDidReceiveSettings(jsonObj));
 
 //------------------------------------------------------------------------------
 
