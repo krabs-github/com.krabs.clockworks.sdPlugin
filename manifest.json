@@ -16,7 +16,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.hour12_large_digit1"
+            "UUID": "com.krabs.clockworks.hour12largedigit1"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -34,7 +34,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.hour12_large_digit2"
+            "UUID": "com.krabs.clockworks.hour12largedigit2"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -52,7 +52,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.hour24_large_digit1"
+            "UUID": "com.krabs.clockworks.hour24largedigit1"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -70,7 +70,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.hour24_large_digit2"
+            "UUID": "com.krabs.clockworks.hour24largedigit2"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -88,7 +88,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.minute_large_digit1"
+            "UUID": "com.krabs.clockworks.minutelargedigit1"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -106,7 +106,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.minute_large_digit2"
+            "UUID": "com.krabs.clockworks.minutelargedigit2"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -124,7 +124,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.second_large_digit1"
+            "UUID": "com.krabs.clockworks.secondlargedigit1"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -142,7 +142,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.second_large_digit2"
+            "UUID": "com.krabs.clockworks.secondlargedigit2"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -160,7 +160,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.large_ampm"
+            "UUID": "com.krabs.clockworks.largeampm"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -178,7 +178,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.medium_ampm"
+            "UUID": "com.krabs.clockworks.mediumampm"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -196,7 +196,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.large_seperator_colon"
+            "UUID": "com.krabs.clockworks.largeseperatorcolon"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -214,7 +214,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.large_seperator_dash"
+            "UUID": "com.krabs.clockworks.largeseperatordash"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -232,7 +232,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.large_seperator_dot"
+            "UUID": "com.krabs.clockworks.largeseperatordot"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -250,7 +250,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.large_seperator_slash"
+            "UUID": "com.krabs.clockworks.largeseperatorslash"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -268,7 +268,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.medium_seperator_colon"
+            "UUID": "com.krabs.clockworks.mediumseperatorcolon"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -286,7 +286,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.medium_seperator_dash"
+            "UUID": "com.krabs.clockworks.mediumseperatordash"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -304,7 +304,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.medium_seperator_dot"
+            "UUID": "com.krabs.clockworks.mediumseperatordot"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -322,7 +322,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.medium_seperator_slash"
+            "UUID": "com.krabs.clockworks.mediumseperatorslash"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -340,7 +340,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.seperator_blank"
+            "UUID": "com.krabs.clockworks.seperatorblank"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -358,7 +358,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.hour12_medium"
+            "UUID": "com.krabs.clockworks.hour12medium"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -376,7 +376,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.hour24_medium"
+            "UUID": "com.krabs.clockworks.hour24medium"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -394,7 +394,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.minute_medium"
+            "UUID": "com.krabs.clockworks.minutemedium"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -412,7 +412,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.seconds_medium"
+            "UUID": "com.krabs.clockworks.secondsmedium"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -430,7 +430,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.month_medium_number"
+            "UUID": "com.krabs.clockworks.monthmediumnumber"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -448,7 +448,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.month_medium_short"
+            "UUID": "com.krabs.clockworks.monthmediumshort"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -466,7 +466,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.day_medium_number"
+            "UUID": "com.krabs.clockworks.daymediumnumber"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -484,7 +484,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.day_medium_short"
+            "UUID": "com.krabs.clockworks.daymediumshort"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -502,7 +502,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.medium_year_digits_first2"
+            "UUID": "com.krabs.clockworks.mediumyeardigitsfirst2"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -520,7 +520,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.medium_year_digits_last2"
+            "UUID": "com.krabs.clockworks.mediumyeardigitslast2"
         },
         {
             "Icon": "resources/images/actionIcon",
@@ -538,7 +538,7 @@
             "SupportedInMultiActions": false,
             "Tooltip": "action1",
             "PropertyInspectorPath": "PI/generic_pi.html",
-            "UUID": "com.krabs.clockworks.mediumm_year_4_digits"
+            "UUID": "com.krabs.clockworks.mediummyear4digits"
         }
     ],
 

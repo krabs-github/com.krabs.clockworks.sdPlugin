@@ -10,13 +10,38 @@
     </head>
     <body>
         <div class="sdpi-wrapper">
-<!--
           <div class="sdpi-item">
-              <details class="message info">
-                <summary></summary>
+              <details class="message caution">
+              <summary>Do NOT use the image area on the left. It will interfere with this plugin.</summary>
               </details>
           </div>
--->
+          <div class="sdpi-heading">Font Configuration</div>
+          <div class="sdpi-item" id="vClockworks_Font">
+              <div class="sdpi-item-label">Font</div>
+              <select class="sdpi-item-value select">
+                <option value="Arial">Arial</option>
+                <option value="Impact">Impact</option>
+              </select>
+          </div>
+          <div type="color" class="sdpi-item" id="vClockworks_Font_Color">
+              <div class="sdpi-item-label">Color</div>
+              <input type="color" class="sdpi-item-value" value="#3333cc">
+          </div>
+
+          <div class="sdpi-heading">Background Configuration</div>
+          <div class="sdpi-item" id="my_private_file_selector">
+              <div class="sdpi-item-label">Button Image</div>
+              <div class="sdpi-item-group file" id="filepickergroup">
+                  <input class="sdpi-item-value" type="file" id="vClockworks_Background_Image" accept=".jpg, .jpeg, .png">
+                  <label class="sdpi-file-info" for="vClockworks_Background_Image">no file...</label>
+                  <label class="sdpi-file-label" for="vClockworks_Background_Image">Choose file...</label>
+               </div>
+           </div>
+           <div type="color" class="sdpi-item" id="vClockworks_Background_Color">
+               <div class="sdpi-item-label">Background Color</div>
+               <input type="color" class="sdpi-item-value" value="#3333cc">
+           </div>
+
             <div class="sdpi-heading">Support & Information</div>
             <div class="sdpi-item">
                 <details class="message krabs_avatar">

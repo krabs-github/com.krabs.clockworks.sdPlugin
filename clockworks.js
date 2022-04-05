@@ -1,107 +1,107 @@
 $SD.on('connected', (jsonObj) => connected(jsonObj));
 function connected(jsn) {
     // hour12_large_digit1
-    $SD.on('com.krabs.clockworks.hour12_large_digit1.willAppear', jsonObj => hour12_large_digit1.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.hour12_large_digit1.didReceiveSettings', jsonObj => hour12_large_digit1.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.hour12largedigit1.willAppear', jsonObj => hour12_large_digit1.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.hour12largedigit1.didReceiveSettings', jsonObj => hour12_large_digit1.onDidReceiveSettings(jsonObj));
     // hour12_large_digit2
-    $SD.on('com.krabs.clockworks.hour12_large_digit2.willAppear', jsonObj => hour12_large_digit2.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.hour12_large_digit2.didReceiveSettings', jsonObj => hour12_large_digit2.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.hour12largedigit2.willAppear', jsonObj => hour12_large_digit2.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.hour12largedigit2.didReceiveSettings', jsonObj => hour12_large_digit2.onDidReceiveSettings(jsonObj));
     // hour24_large_digit1
-    $SD.on('com.krabs.clockworks.hour24_large_digit1.willAppear', jsonObj => hour24_large_digit1.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.hour24_large_digit1.didReceiveSettings', jsonObj => hour24_large_digit1.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.hour24largedigit1.willAppear', jsonObj => hour24_large_digit1.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.hour24largedigit1.didReceiveSettings', jsonObj => hour24_large_digit1.onDidReceiveSettings(jsonObj));
     // hour24_large_digit2
-    $SD.on('com.krabs.clockworks.hour24_large_digit2.willAppear', jsonObj => hour24_large_digit2.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.hour24_large_digit2.didReceiveSettings', jsonObj => hour24_large_digit2.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.hour24largedigit2.willAppear', jsonObj => hour24_large_digit2.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.hour24largedigit2.didReceiveSettings', jsonObj => hour24_large_digit2.onDidReceiveSettings(jsonObj));
     // minute_large_digit1
-    $SD.on('com.krabs.clockworks.minute_large_digit1.willAppear', jsonObj => minute_large_digit1.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.minute_large_digit1.didReceiveSettings', jsonObj => minute_large_digit1.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.minutelargedigit1.willAppear', jsonObj => minute_large_digit1.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.minutelargedigit1.didReceiveSettings', jsonObj => minute_large_digit1.onDidReceiveSettings(jsonObj));
     // minute_large_digit2
-    $SD.on('com.krabs.clockworks.minute_large_digit2.willAppear', jsonObj => minute_large_digit2.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.minute_large_digit2.didReceiveSettings', jsonObj => minute_large_digit2.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.minutelargedigit2.willAppear', jsonObj => minute_large_digit2.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.minutelargedigit2.didReceiveSettings', jsonObj => minute_large_digit2.onDidReceiveSettings(jsonObj));
     // second_large_digit1
-    $SD.on('com.krabs.clockworks.second_large_digit1.willAppear', jsonObj => second_large_digit1.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.second_large_digit1.didReceiveSettings', jsonObj => second_large_digit1.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.secondlargedigit1.willAppear', jsonObj => second_large_digit1.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.secondlargedigit1.didReceiveSettings', jsonObj => second_large_digit1.onDidReceiveSettings(jsonObj));
     // second_large_digit2
-    $SD.on('com.krabs.clockworks.second_large_digit2.willAppear', jsonObj => second_large_digit2.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.second_large_digit2.didReceiveSettings', jsonObj => second_large_digit2.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.secondlargedigit2.willAppear', jsonObj => second_large_digit2.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.secondlargedigit2.didReceiveSettings', jsonObj => second_large_digit2.onDidReceiveSettings(jsonObj));
 
 //------------------------------------------------------------------------------
 
     // Large ampm
-    $SD.on('com.krabs.clockworks.large_ampm.willAppear', jsonObj => large_ampm.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.large_ampm.didReceiveSettings', jsonObj => large_ampm.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.largeampm.willAppear', jsonObj => large_ampm.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.largeampm.didReceiveSettings', jsonObj => large_ampm.onDidReceiveSettings(jsonObj));
     // Medium ampm
-    $SD.on('com.krabs.clockworks.medium_ampm.willAppear', jsonObj => medium_ampm.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.medium_ampm.didReceiveSettings', jsonObj => medium_ampm.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.mediumampm.willAppear', jsonObj => medium_ampm.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.mediumampm.didReceiveSettings', jsonObj => medium_ampm.onDidReceiveSettings(jsonObj));
 
 //------------------------------------------------------------------------------
 
     // Large Seperator ( : )
-    $SD.on('com.krabs.clockworks.large_seperator_colon.willAppear', jsonObj => large_seperator_colon.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.large_seperator_colon.didReceiveSettings', jsonObj => large_seperator_colon.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.largeseperatorcolon.willAppear', jsonObj => large_seperator_colon.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.largeseperatorcolon.didReceiveSettings', jsonObj => large_seperator_colon.onDidReceiveSettings(jsonObj));
     // Large Seperator ( - )
-    $SD.on('com.krabs.clockworks.large_seperator_dash.willAppear', jsonObj => large_seperator_dash.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.large_seperator_dash.didReceiveSettings', jsonObj => large_seperator_dash.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.largeseperatordash.willAppear', jsonObj => large_seperator_dash.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.largeseperatordash.didReceiveSettings', jsonObj => large_seperator_dash.onDidReceiveSettings(jsonObj));
     // Large Seperator ( . )
-    $SD.on('com.krabs.clockworks.large_seperator_dot.willAppear', jsonObj => large_seperator_dot.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.large_seperator_dot.didReceiveSettings', jsonObj => large_seperator_dot.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.largeseperatordot.willAppear', jsonObj => large_seperator_dot.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.largeseperatordot.didReceiveSettings', jsonObj => large_seperator_dot.onDidReceiveSettings(jsonObj));
     // Large Seperator ( / )
-    $SD.on('com.krabs.clockworks.large_seperator_slash.willAppear', jsonObj => large_seperator_slash.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.large_seperator_slash.didReceiveSettings', jsonObj => large_seperator_slash.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.largeseperatorslash.willAppear', jsonObj => large_seperator_slash.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.largeseperatorslash.didReceiveSettings', jsonObj => large_seperator_slash.onDidReceiveSettings(jsonObj));
     // Medium Seperator ( : )
-    $SD.on('com.krabs.clockworks.medium_seperator_colon.willAppear', jsonObj => medium_seperator_colon.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.medium_seperator_colon.didReceiveSettings', jsonObj => medium_seperator_colon.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.mediumseperatorcolon.willAppear', jsonObj => medium_seperator_colon.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.mediumseperatorcolon.didReceiveSettings', jsonObj => medium_seperator_colon.onDidReceiveSettings(jsonObj));
     // Medium Seperator ( - )
-    $SD.on('com.krabs.clockworks.medium_seperator_dash.willAppear', jsonObj => medium_seperator_dash.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.medium_seperator_dash.didReceiveSettings', jsonObj => medium_seperator_dash.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.mediumseperatordash.willAppear', jsonObj => medium_seperator_dash.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.mediumseperatordash.didReceiveSettings', jsonObj => medium_seperator_dash.onDidReceiveSettings(jsonObj));
     // Medium Seperator ( . )
-    $SD.on('com.krabs.clockworks.medium_seperator_dot.willAppear', jsonObj => medium_seperator_dot.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.medium_seperator_dot.didReceiveSettings', jsonObj => medium_seperator_dot.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.mediumseperatordot.willAppear', jsonObj => medium_seperator_dot.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.mediumseperatordot.didReceiveSettings', jsonObj => medium_seperator_dot.onDidReceiveSettings(jsonObj));
     // Medium Seperator ( / )
-    $SD.on('com.krabs.clockworks.medium_seperator_slash.willAppear', jsonObj => medium_seperator_slash.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.medium_seperator_slash.didReceiveSettings', jsonObj => medium_seperator_slash.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.mediumseperatorslash.willAppear', jsonObj => medium_seperator_slash.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.mediumseperatorslash.didReceiveSettings', jsonObj => medium_seperator_slash.onDidReceiveSettings(jsonObj));
     // Blank Seperator
-    $SD.on('com.krabs.clockworks.seperator_blank.willAppear', jsonObj => seperator_blank.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.seperator_blank.didReceiveSettings', jsonObj => seperator_blank.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.seperatorblank.willAppear', jsonObj => seperator_blank.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.seperatorblank.didReceiveSettings', jsonObj => seperator_blank.onDidReceiveSettings(jsonObj));
 
 //------------------------------------------------------------------------------
 
     // hour12 medium
-    $SD.on('com.krabs.clockworks.hour12_medium.willAppear', jsonObj => hour12_medium.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.hour12_medium.didReceiveSettings', jsonObj => hour12_medium.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.hour12medium.willAppear', jsonObj => hour12_medium.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.hour12medium.didReceiveSettings', jsonObj => hour12_medium.onDidReceiveSettings(jsonObj));
     // hour24 medium
-    $SD.on('com.krabs.clockworks.hour24_medium.willAppear', jsonObj => hour24_medium.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.hour24_medium.didReceiveSettings', jsonObj => hour24_medium.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.hour24medium.willAppear', jsonObj => hour24_medium.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.hour24medium.didReceiveSettings', jsonObj => hour24_medium.onDidReceiveSettings(jsonObj));
     // minute medium
-    $SD.on('com.krabs.clockworks.minute_medium.willAppear', jsonObj => minute_medium.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.minute_medium.didReceiveSettings', jsonObj => minute_medium.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.minutemedium.willAppear', jsonObj => minute_medium.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.minutemedium.didReceiveSettings', jsonObj => minute_medium.onDidReceiveSettings(jsonObj));
     // seconds medium
-    $SD.on('com.krabs.clockworks.seconds_medium.willAppear', jsonObj => seconds_medium.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.seconds_medium.didReceiveSettings', jsonObj => seconds_medium.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.secondsmedium.willAppear', jsonObj => seconds_medium.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.secondsmedium.didReceiveSettings', jsonObj => seconds_medium.onDidReceiveSettings(jsonObj));
 
 //------------------------------------------------------------------------------
 
     // seconds medium
-    $SD.on('com.krabs.clockworks.month_medium_number.willAppear', jsonObj => month_medium_number.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.month_medium_number.didReceiveSettings', jsonObj => month_medium_number.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.monthmediumnumber.willAppear', jsonObj => month_medium_number.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.monthmediumnumber.didReceiveSettings', jsonObj => month_medium_number.onDidReceiveSettings(jsonObj));
     // seconds medium
-    $SD.on('com.krabs.clockworks.month_medium_short.willAppear', jsonObj => month_medium_short.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.month_medium_short.didReceiveSettings', jsonObj => month_medium_short.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.monthmediumshort.willAppear', jsonObj => month_medium_short.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.monthmediumshort.didReceiveSettings', jsonObj => month_medium_short.onDidReceiveSettings(jsonObj));
     // seconds medium
-    $SD.on('com.krabs.clockworks.day_medium_number.willAppear', jsonObj => day_medium_number.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.day_medium_number.didReceiveSettings', jsonObj => day_medium_number.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.daymediumnumber.willAppear', jsonObj => day_medium_number.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.daymediunumber.didReceiveSettings', jsonObj => day_medium_number.onDidReceiveSettings(jsonObj));
     // seconds medium
-    $SD.on('com.krabs.clockworks.day_medium_short.willAppear', jsonObj => day_medium_short.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.day_medium_short.didReceiveSettings', jsonObj => day_medium_short.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.daymediumshort.willAppear', jsonObj => day_medium_short.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.daymediumshort.didReceiveSettings', jsonObj => day_medium_short.onDidReceiveSettings(jsonObj));
     // seconds medium
-    $SD.on('com.krabs.clockworks.medium_year_digits_first2.willAppear', jsonObj => medium_year_digits_first2.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.medium_year_digits_first2.didReceiveSettings', jsonObj => medium_year_digits_first2.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.mediumyeardigitsfirst2.willAppear', jsonObj => medium_year_digits_first2.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.mediumyeardigitsfirst2.didReceiveSettings', jsonObj => medium_year_digits_first2.onDidReceiveSettings(jsonObj));
     // seconds medium
-    $SD.on('com.krabs.clockworks.medium_year_digits_last2.willAppear', jsonObj => medium_year_digits_last2.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.medium_year_digits_last2.didReceiveSettings', jsonObj => medium_year_digits_last2.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.mediumyeardigitslast2.willAppear', jsonObj => medium_year_digits_last2.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.mediumyeardigitslast2.didReceiveSettings', jsonObj => medium_year_digits_last2.onDidReceiveSettings(jsonObj));
     // seconds medium
-    $SD.on('com.krabs.clockworks.mediumm_year_4_digits.willAppear', jsonObj => mediumm_year_4_digits.onWillAppear(jsonObj));
-    $SD.on('com.krabs.clockworks.mediumm_year_4_digits.didReceiveSettings', jsonObj => mediumm_year_4_digits.onDidReceiveSettings(jsonObj));
+    $SD.on('com.krabs.clockworks.mediummyear4digits.willAppear', jsonObj => mediumm_year_4_digits.onWillAppear(jsonObj));
+    $SD.on('com.krabs.clockworks.mediummyear4digits.didReceiveSettings', jsonObj => mediumm_year_4_digits.onDidReceiveSettings(jsonObj));
 
 //------------------------------------------------------------------------------
 
