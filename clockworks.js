@@ -148,17 +148,33 @@ var vKrabs_Intervals = {};
 // hour12_large_digit1
 const hour12_large_digit1 = {
     settings:{},
+    onWillAppear: function(jsn) {
+      if (!this.settings) this.settings={};
+      $SD.api.getSettings(jsn.context);
+      this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+      var vKrabs_JSONContext = jsn.context;
+      vPiSettings = {};
+      vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+      vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+      vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+      vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+      console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+    },
+
     onDidReceiveSettings: function(jsn) {
       this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
       var vKrabs_JSONContext = jsn.context;
-    },
+      vPiSettings = {};
+      vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+      vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+      vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+      vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+      console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
 
-    onWillAppear: function(jsn) {
-      this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-      var vKrabs_JSONContext = jsn.context;
       function UpdateDisplay() {
         var vDate_Now = new Date();
         var vHour12_large_digit1 = vDate_Now.toLocaleString([navigator.language], { hour: 'numeric', hour12: true }).split(/\s(.+)/)[0];
+        console.log("hit: " + vHour12_large_digit1)
         vHour12_large_digit1 = '0' + vHour12_large_digit1
         vHour12_large_digit1 = vHour12_large_digit1.slice(-2).charAt(0)
 
@@ -213,14 +229,28 @@ const hour12_large_digit1 = {
 
 const hour12_large_digit2 = {
   settings:{},
+  onWillAppear: function(jsn) {
+    if (!this.settings) this.settings={};
+    $SD.api.getSettings(jsn.context);
+    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+  },
+
   onDidReceiveSettings: function(jsn) {
     this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
     var vKrabs_JSONContext = jsn.context;
-  },
-
-  onWillAppear: function(jsn) {
-    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
     function UpdateDisplay() {
       var vDate_Now = new Date();
       var vHour12_large_digit2 = vDate_Now.toLocaleString([navigator.language], { hour: 'numeric', hour12: true }).split(/\s(.+)/)[0];
@@ -276,14 +306,28 @@ const hour12_large_digit2 = {
 
 const hour24_large_digit1 = {
   settings:{},
+  onWillAppear: function(jsn) {
+    if (!this.settings) this.settings={};
+    $SD.api.getSettings(jsn.context);
+    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+  },
+
   onDidReceiveSettings: function(jsn) {
     this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
     var vKrabs_JSONContext = jsn.context;
-  },
-
-  onWillAppear: function(jsn) {
-    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
     function UpdateDisplay() {
       var vDate_Now = new Date();
       var hour24_large_digit1 = vDate_Now.toLocaleString([navigator.language], { hour: 'numeric', hour12: false }).split(/\s(.+)/)[0];
@@ -341,14 +385,28 @@ const hour24_large_digit1 = {
 
 const hour24_large_digit2 = {
   settings:{},
+  onWillAppear: function(jsn) {
+    if (!this.settings) this.settings={};
+    $SD.api.getSettings(jsn.context);
+    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+  },
+
   onDidReceiveSettings: function(jsn) {
     this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
     var vKrabs_JSONContext = jsn.context;
-  },
-
-  onWillAppear: function(jsn) {
-    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
     function UpdateDisplay() {
       var vDate_Now = new Date();
       var hour24_large_digit2 = vDate_Now.toLocaleString([navigator.language], { hour: 'numeric', hour12: false }).split(/\s(.+)/)[0];
@@ -405,14 +463,28 @@ const hour24_large_digit2 = {
 
 const minute_large_digit1 = {
   settings:{},
+  onWillAppear: function(jsn) {
+    if (!this.settings) this.settings={};
+    $SD.api.getSettings(jsn.context);
+    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+  },
+
   onDidReceiveSettings: function(jsn) {
     this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
     var vKrabs_JSONContext = jsn.context;
-  },
-
-  onWillAppear: function(jsn) {
-    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
     function UpdateDisplay() {
       var vDate_Now = new Date();
       var minute_large_digit1 = vDate_Now.toLocaleString([navigator.language], { minute: '2-digit' })
@@ -468,14 +540,28 @@ const minute_large_digit1 = {
 
 const minute_large_digit2 = {
   settings:{},
+  onWillAppear: function(jsn) {
+    if (!this.settings) this.settings={};
+    $SD.api.getSettings(jsn.context);
+    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+  },
+
   onDidReceiveSettings: function(jsn) {
     this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
     var vKrabs_JSONContext = jsn.context;
-  },
-
-  onWillAppear: function(jsn) {
-    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
     function UpdateDisplay() {
       var vDate_Now = new Date();
       var minute_large_digit2 = vDate_Now.toLocaleString([navigator.language], { minute: '2-digit' })
@@ -531,14 +617,28 @@ const minute_large_digit2 = {
 
 const second_large_digit1 = {
   settings:{},
+  onWillAppear: function(jsn) {
+    if (!this.settings) this.settings={};
+    $SD.api.getSettings(jsn.context);
+    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+  },
+
   onDidReceiveSettings: function(jsn) {
     this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
     var vKrabs_JSONContext = jsn.context;
-  },
-
-  onWillAppear: function(jsn) {
-    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
     function UpdateDisplay() {
       var vDate_Now = new Date();
       var second_large_digit1 = vDate_Now.toLocaleString([navigator.language], { second: '2-digit' })
@@ -594,14 +694,28 @@ const second_large_digit1 = {
 
 const second_large_digit2 = {
   settings:{},
+  onWillAppear: function(jsn) {
+    if (!this.settings) this.settings={};
+    $SD.api.getSettings(jsn.context);
+    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+  },
+
   onDidReceiveSettings: function(jsn) {
     this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
     var vKrabs_JSONContext = jsn.context;
-  },
-
-  onWillAppear: function(jsn) {
-    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
     function UpdateDisplay() {
       var vDate_Now = new Date();
       var second_large_digit2 = vDate_Now.toLocaleString([navigator.language], { second: '2-digit' })
@@ -659,14 +773,28 @@ const second_large_digit2 = {
 
 const large_ampm = {
   settings:{},
+  onWillAppear: function(jsn) {
+    if (!this.settings) this.settings={};
+    $SD.api.getSettings(jsn.context);
+    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+  },
+
   onDidReceiveSettings: function(jsn) {
     this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
     var vKrabs_JSONContext = jsn.context;
-  },
-
-  onWillAppear: function(jsn) {
-    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
     function UpdateDisplay() {
       var vDate_Now = new Date();
       var large_ampm = vDate_Now.toLocaleString([navigator.language], { hour: 'numeric', hour12: true }).split(/\s(.+)/)[1];
@@ -720,14 +848,28 @@ const large_ampm = {
 
 const medium_ampm = {
   settings:{},
+  onWillAppear: function(jsn) {
+    if (!this.settings) this.settings={};
+    $SD.api.getSettings(jsn.context);
+    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+  },
+
   onDidReceiveSettings: function(jsn) {
     this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
     var vKrabs_JSONContext = jsn.context;
-  },
-
-  onWillAppear: function(jsn) {
-    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
     function UpdateDisplay() {
       var vDate_Now = new Date();
       var medium_ampm = vDate_Now.toLocaleString([navigator.language], { hour: 'numeric', hour12: true }).split(/\s(.+)/)[1];
@@ -783,14 +925,28 @@ const medium_ampm = {
 
 const large_seperator_colon = {
   settings:{},
+  onWillAppear: function(jsn) {
+    if (!this.settings) this.settings={};
+    $SD.api.getSettings(jsn.context);
+    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+  },
+
   onDidReceiveSettings: function(jsn) {
     this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
     var vKrabs_JSONContext = jsn.context;
-  },
-
-  onWillAppear: function(jsn) {
-    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
     function UpdateDisplay() {
       var vText = ':';
       let vTextPayload = {};
@@ -842,14 +998,28 @@ const large_seperator_colon = {
 
 const large_seperator_dash = {
   settings:{},
+  onWillAppear: function(jsn) {
+    if (!this.settings) this.settings={};
+    $SD.api.getSettings(jsn.context);
+    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+  },
+
   onDidReceiveSettings: function(jsn) {
     this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
     var vKrabs_JSONContext = jsn.context;
-  },
-
-  onWillAppear: function(jsn) {
-    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
     function UpdateDisplay() {
       var vText = '-';
       let vTextPayload = {};
@@ -901,14 +1071,28 @@ const large_seperator_dash = {
 
 const large_seperator_dot = {
   settings:{},
+  onWillAppear: function(jsn) {
+    if (!this.settings) this.settings={};
+    $SD.api.getSettings(jsn.context);
+    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+  },
+
   onDidReceiveSettings: function(jsn) {
     this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
     var vKrabs_JSONContext = jsn.context;
-  },
-
-  onWillAppear: function(jsn) {
-    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
     function UpdateDisplay() {
       var vText = '.';
       let vTextPayload = {};
@@ -960,14 +1144,28 @@ const large_seperator_dot = {
 
 const large_seperator_slash = {
   settings:{},
+  onWillAppear: function(jsn) {
+    if (!this.settings) this.settings={};
+    $SD.api.getSettings(jsn.context);
+    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+  },
+
   onDidReceiveSettings: function(jsn) {
     this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
     var vKrabs_JSONContext = jsn.context;
-  },
-
-  onWillAppear: function(jsn) {
-    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
     function UpdateDisplay() {
       var vText = '/';
       let vTextPayload = {};
@@ -1019,14 +1217,28 @@ const large_seperator_slash = {
 
 const medium_seperator_colon = {
   settings:{},
+  onWillAppear: function(jsn) {
+    if (!this.settings) this.settings={};
+    $SD.api.getSettings(jsn.context);
+    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+  },
+
   onDidReceiveSettings: function(jsn) {
     this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
     var vKrabs_JSONContext = jsn.context;
-  },
-
-  onWillAppear: function(jsn) {
-    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
     function UpdateDisplay() {
       var vText = ':';
       let vTextPayload = {};
@@ -1078,14 +1290,28 @@ const medium_seperator_colon = {
 
 const medium_seperator_dash = {
   settings:{},
+  onWillAppear: function(jsn) {
+    if (!this.settings) this.settings={};
+    $SD.api.getSettings(jsn.context);
+    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+  },
+
   onDidReceiveSettings: function(jsn) {
     this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
     var vKrabs_JSONContext = jsn.context;
-  },
-
-  onWillAppear: function(jsn) {
-    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
     function UpdateDisplay() {
       var vText = '-';
       let vTextPayload = {};
@@ -1137,14 +1363,28 @@ const medium_seperator_dash = {
 
 const medium_seperator_dot = {
   settings:{},
+  onWillAppear: function(jsn) {
+    if (!this.settings) this.settings={};
+    $SD.api.getSettings(jsn.context);
+    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+  },
+
   onDidReceiveSettings: function(jsn) {
     this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
     var vKrabs_JSONContext = jsn.context;
-  },
-
-  onWillAppear: function(jsn) {
-    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
     function UpdateDisplay() {
       var vText = '.';
       let vTextPayload = {};
@@ -1196,14 +1436,28 @@ const medium_seperator_dot = {
 
 const medium_seperator_slash = {
   settings:{},
+  onWillAppear: function(jsn) {
+    if (!this.settings) this.settings={};
+    $SD.api.getSettings(jsn.context);
+    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+  },
+
   onDidReceiveSettings: function(jsn) {
     this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
     var vKrabs_JSONContext = jsn.context;
-  },
-
-  onWillAppear: function(jsn) {
-    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
     function UpdateDisplay() {
       var vText = '/';
       let vTextPayload = {};
@@ -1255,14 +1509,28 @@ const medium_seperator_slash = {
 
 const seperator_blank = {
   settings:{},
+  onWillAppear: function(jsn) {
+    if (!this.settings) this.settings={};
+    $SD.api.getSettings(jsn.context);
+    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+  },
+
   onDidReceiveSettings: function(jsn) {
     this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
     var vKrabs_JSONContext = jsn.context;
-  },
-
-  onWillAppear: function(jsn) {
-    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
     function UpdateDisplay() {
       var vText = '';
       let vTextPayload = {};
@@ -1316,14 +1584,28 @@ const seperator_blank = {
 
 const hour12_medium = {
     settings:{},
+    onWillAppear: function(jsn) {
+      if (!this.settings) this.settings={};
+      $SD.api.getSettings(jsn.context);
+      this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+      var vKrabs_JSONContext = jsn.context;
+      vPiSettings = {};
+      vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+      vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+      vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+      vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+      console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+    },
+
     onDidReceiveSettings: function(jsn) {
       this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
       var vKrabs_JSONContext = jsn.context;
-    },
-
-    onWillAppear: function(jsn) {
-      this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-      var vKrabs_JSONContext = jsn.context;
+      vPiSettings = {};
+      vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+      vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+      vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+      vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+      console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
       function UpdateDisplay() {
         var vDate_Now = new Date();
         var hour12_medium = vDate_Now.toLocaleString([navigator.language], { hour: 'numeric', hour12: true }).split(/\s(.+)/)[0];
@@ -1377,14 +1659,28 @@ const hour12_medium = {
 
 const hour24_medium = {
     settings:{},
+    onWillAppear: function(jsn) {
+      if (!this.settings) this.settings={};
+      $SD.api.getSettings(jsn.context);
+      this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+      var vKrabs_JSONContext = jsn.context;
+      vPiSettings = {};
+      vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+      vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+      vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+      vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+      console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+    },
+
     onDidReceiveSettings: function(jsn) {
       this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
       var vKrabs_JSONContext = jsn.context;
-    },
-
-    onWillAppear: function(jsn) {
-      this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-      var vKrabs_JSONContext = jsn.context;
+      vPiSettings = {};
+      vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+      vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+      vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+      vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+      console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
       function UpdateDisplay() {
         var vDate_Now = new Date();
         var hour24_medium = vDate_Now.toLocaleString([navigator.language], { hour: 'numeric', hour12: false }).split(/\s(.+)/)[0];
@@ -1438,14 +1734,28 @@ const hour24_medium = {
 
 const minute_medium = {
   settings:{},
+  onWillAppear: function(jsn) {
+    if (!this.settings) this.settings={};
+    $SD.api.getSettings(jsn.context);
+    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+  },
+
   onDidReceiveSettings: function(jsn) {
     this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
     var vKrabs_JSONContext = jsn.context;
-  },
-
-  onWillAppear: function(jsn) {
-    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
     function UpdateDisplay() {
       var vDate_Now = new Date();
       var minute_medium = vDate_Now.toLocaleString([navigator.language], { minute: '2-digit' })
@@ -1501,14 +1811,28 @@ const minute_medium = {
 
 const seconds_medium = {
   settings:{},
+  onWillAppear: function(jsn) {
+    if (!this.settings) this.settings={};
+    $SD.api.getSettings(jsn.context);
+    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+  },
+
   onDidReceiveSettings: function(jsn) {
     this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
     var vKrabs_JSONContext = jsn.context;
-  },
-
-  onWillAppear: function(jsn) {
-    this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-    var vKrabs_JSONContext = jsn.context;
+    vPiSettings = {};
+    vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+    vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+    vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+    vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+    console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
     function UpdateDisplay() {
       var vDate_Now = new Date();
       var seconds_medium = vDate_Now.toLocaleString([navigator.language], { second: '2-digit' })
@@ -1567,14 +1891,28 @@ const seconds_medium = {
 // month_medium_number
 const month_medium_number = {
     settings:{},
+    onWillAppear: function(jsn) {
+      if (!this.settings) this.settings={};
+      $SD.api.getSettings(jsn.context);
+      this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+      var vKrabs_JSONContext = jsn.context;
+      vPiSettings = {};
+      vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+      vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+      vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+      vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+      console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+    },
+
     onDidReceiveSettings: function(jsn) {
       this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
       var vKrabs_JSONContext = jsn.context;
-    },
-
-    onWillAppear: function(jsn) {
-      this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-      var vKrabs_JSONContext = jsn.context;
+      vPiSettings = {};
+      vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+      vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+      vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+      vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+      console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
       function UpdateDisplay() {
         var vDate_Now = new Date();
         var month_medium_number = vDate_Now.toLocaleString([navigator.language], { month: 'numeric' })
@@ -1630,14 +1968,28 @@ const month_medium_number = {
 
 const month_medium_short = {
     settings:{},
+    onWillAppear: function(jsn) {
+      if (!this.settings) this.settings={};
+      $SD.api.getSettings(jsn.context);
+      this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+      var vKrabs_JSONContext = jsn.context;
+      vPiSettings = {};
+      vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+      vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+      vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+      vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+      console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+    },
+
     onDidReceiveSettings: function(jsn) {
       this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
       var vKrabs_JSONContext = jsn.context;
-    },
-
-    onWillAppear: function(jsn) {
-      this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-      var vKrabs_JSONContext = jsn.context;
+      vPiSettings = {};
+      vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+      vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+      vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+      vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+      console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
       function UpdateDisplay() {
         var vDate_Now = new Date();
         var month_medium_short = vDate_Now.toLocaleString([navigator.language], { month: 'short' })
@@ -1695,14 +2047,28 @@ const month_medium_short = {
 
 const day_medium_number = {
     settings:{},
+    onWillAppear: function(jsn) {
+      if (!this.settings) this.settings={};
+      $SD.api.getSettings(jsn.context);
+      this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+      var vKrabs_JSONContext = jsn.context;
+      vPiSettings = {};
+      vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+      vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+      vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+      vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+      console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+    },
+
     onDidReceiveSettings: function(jsn) {
       this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
       var vKrabs_JSONContext = jsn.context;
-    },
-
-    onWillAppear: function(jsn) {
-      this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-      var vKrabs_JSONContext = jsn.context;
+      vPiSettings = {};
+      vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+      vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+      vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+      vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+      console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
       function UpdateDisplay() {
         var vDate_Now = new Date();
         var day_medium_number = vDate_Now.toLocaleString([navigator.language], { day: 'numeric' })
@@ -1758,14 +2124,28 @@ const day_medium_number = {
 
 const day_medium_short = {
     settings:{},
+    onWillAppear: function(jsn) {
+      if (!this.settings) this.settings={};
+      $SD.api.getSettings(jsn.context);
+      this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+      var vKrabs_JSONContext = jsn.context;
+      vPiSettings = {};
+      vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+      vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+      vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+      vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+      console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+    },
+
     onDidReceiveSettings: function(jsn) {
       this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
       var vKrabs_JSONContext = jsn.context;
-    },
-
-    onWillAppear: function(jsn) {
-      this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-      var vKrabs_JSONContext = jsn.context;
+      vPiSettings = {};
+      vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+      vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+      vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+      vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+      console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
       function UpdateDisplay() {
         var vDate_Now = new Date();
         var day_medium_short = vDate_Now.toLocaleString([navigator.language], { weekday: 'short' })
@@ -1823,14 +2203,28 @@ const day_medium_short = {
 
 const medium_year_digits_first2 = {
     settings:{},
+    onWillAppear: function(jsn) {
+      if (!this.settings) this.settings={};
+      $SD.api.getSettings(jsn.context);
+      this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+      var vKrabs_JSONContext = jsn.context;
+      vPiSettings = {};
+      vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+      vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+      vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+      vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+      console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+    },
+
     onDidReceiveSettings: function(jsn) {
       this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
       var vKrabs_JSONContext = jsn.context;
-    },
-
-    onWillAppear: function(jsn) {
-      this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-      var vKrabs_JSONContext = jsn.context;
+      vPiSettings = {};
+      vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+      vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+      vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+      vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+      console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
       function UpdateDisplay() {
         var vDate_Now = new Date();
         var medium_year_digits_first2 = vDate_Now.toLocaleString([navigator.language], { year: 'numeric' })
@@ -1885,14 +2279,28 @@ const medium_year_digits_first2 = {
 
 const medium_year_digits_last2 = {
     settings:{},
+    onWillAppear: function(jsn) {
+      if (!this.settings) this.settings={};
+      $SD.api.getSettings(jsn.context);
+      this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+      var vKrabs_JSONContext = jsn.context;
+      vPiSettings = {};
+      vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+      vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+      vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+      vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+      console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+    },
+
     onDidReceiveSettings: function(jsn) {
       this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
       var vKrabs_JSONContext = jsn.context;
-    },
-
-    onWillAppear: function(jsn) {
-      this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-      var vKrabs_JSONContext = jsn.context;
+      vPiSettings = {};
+      vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+      vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+      vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+      vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+      console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
       function UpdateDisplay() {
         var vDate_Now = new Date();
         var medium_year_digits_last2 = vDate_Now.toLocaleString([navigator.language], { year: 'numeric' })
@@ -1947,14 +2355,28 @@ const medium_year_digits_last2 = {
 
 const mediumm_year_4_digits = {
     settings:{},
+    onWillAppear: function(jsn) {
+      if (!this.settings) this.settings={};
+      $SD.api.getSettings(jsn.context);
+      this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
+      var vKrabs_JSONContext = jsn.context;
+      vPiSettings = {};
+      vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+      vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+      vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+      vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+      console.log("onDidReceiveSettings: settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
+    },
+
     onDidReceiveSettings: function(jsn) {
       this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
       var vKrabs_JSONContext = jsn.context;
-    },
-
-    onWillAppear: function(jsn) {
-      this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
-      var vKrabs_JSONContext = jsn.context;
+      vPiSettings = {};
+      vPiSettings.font = this.settings[jsn.context].vClockworks_Font
+      vPiSettings.fontcolor = this.settings[jsn.context].vClockworks_Font_Color
+      vPiSettings.backgroundImage =  this.settings[jsn.context].vClockworks_Background_Image
+      vPiSettings.backgroundColor = this.settings[jsn.context].vClockworks_Background_Color
+      console.log("onDidReceiveSettings settings: font=" + vPiSettings.font + " font color=" + vPiSettings.fontcolor + " bgimage=" + vPiSettings.backgroundImage + " bg color=" + vPiSettings.backgroundColor)
       function UpdateDisplay() {
         var vDate_Now = new Date();
         var mediumm_year_4_digits = vDate_Now.toLocaleString([navigator.language], { year: 'numeric' })

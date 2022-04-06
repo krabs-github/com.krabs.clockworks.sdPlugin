@@ -16,30 +16,33 @@
               </details>
           </div>
           <div class="sdpi-heading">Font Configuration</div>
-          <div class="sdpi-item" id="vClockworks_Font">
+          <div class="sdpi-item">
               <div class="sdpi-item-label">Font</div>
-              <select class="sdpi-item-value select">
+              <select class="sdpi-item-value select" id="vClockworks_Font">
                 <option value="Arial">Arial</option>
                 <option value="Impact">Impact</option>
               </select>
           </div>
+          <!--
           <div type="color" class="sdpi-item" id="vClockworks_Font_Color">
+          -->
+          <div class="sdpi-item">
               <div class="sdpi-item-label">Color</div>
-              <input type="color" class="sdpi-item-value" value="#3333cc">
+              <input type="color" class="sdpi-item-value" id="vClockworks_Font_Color" value="#3333cc">
           </div>
 
           <div class="sdpi-heading">Background Configuration</div>
           <div class="sdpi-item" id="my_private_file_selector">
-              <div class="sdpi-item-label">Button Image</div>
+              <div class="sdpi-item-label">Background Image</div>
               <div class="sdpi-item-group file" id="filepickergroup">
                   <input class="sdpi-item-value" type="file" id="vClockworks_Background_Image" accept=".jpg, .jpeg, .png">
                   <label class="sdpi-file-info" for="vClockworks_Background_Image">no file...</label>
                   <label class="sdpi-file-label" for="vClockworks_Background_Image">Choose file...</label>
                </div>
            </div>
-           <div type="color" class="sdpi-item" id="vClockworks_Background_Color">
+           <div class="sdpi-item">
                <div class="sdpi-item-label">Background Color</div>
-               <input type="color" class="sdpi-item-value" value="#3333cc">
+               <input type="color" class="sdpi-item-value" id="vClockworks_Background_Color" value="#3333cc">
            </div>
 
             <div class="sdpi-heading">Support & Information</div>
@@ -61,15 +64,12 @@
               window.xtWindow = window.open(vDestinationURL, vDestinationTitle);
               setTimeout(() => window.xtWindow.postMessage('initPropertyInspector', '*'), 1500);
           }
-        </script>
-        <script>
-          constrainInput = (event) => {
-            event.target.value = event.target.value.replace(/[\r\n\v]+/g, '')
+          function fSetValues() {
+            document.getElementById("vClockworks_Font").value = vClockworks_Font;
+            document.getElementById("vClockworks_Font_Color").value = vClockworks_Font_Color;
+            document.getElementById("vClockworks_Background_Color").value = vClockworks_Background_Color;
           }
-
-          document.querySelectorAll('textarea').forEach(el => {
-            el.addEventListener('keyup', constrainInput)
-          })
+          fSetValues()
         </script>
     </body>
     </html>
