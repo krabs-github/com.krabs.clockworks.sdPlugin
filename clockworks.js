@@ -156,7 +156,7 @@ const hour12_large_digit1 = {
     onDidReceiveSettings: function(jsn) {
       this.settings[jsn.context] = Utils.getProp(jsn, 'payload.settings', {});
       var vKrabs_JSONContext = jsn.context; let vSelf = this;
-      
+
       function UpdateDisplay() {
         vPiSettings = {};
         if (vSelf.settings[jsn.context].vClockworks_Font) {
@@ -196,6 +196,24 @@ const hour12_large_digit1 = {
           vTextPayload.textBaseline = 'middle';
           vTextPayload.backgroundColor = vPiSettings.backgroundColor;
           vTextPayload.text = vText;
+
+          vImageURL = vPiSettings.backgroundImage;
+          Utils.getDataUri(vImageURL, function(base64Img){
+          var vImageBase64 = base64Img;
+          $SD.api.setImage(vKrabs_JSONContext, vImageBase64);
+        }, undefined, vTextPayload.backgroundColor, undefined, undefined, vTextPayload);
+          // inCanvas, inFillcolor, vOverlay, vFilter, vText
+          //$SD.api.setTitle(vKrabs_JSONContext, vHour12_large_digit1)
+        } else {
+          let vTextPayload = {};
+          vTextPayload.font = 'bold 72px ' + vPiSettings.font;
+          vTextPayload.fillStyle  = vPiSettings.fontcolor;
+          vTextPayload.x = 36;
+          vTextPayload.y = 41;
+          vTextPayload.textAlign = 'center';
+          vTextPayload.textBaseline = 'middle';
+          vTextPayload.backgroundColor = vPiSettings.backgroundColor;
+          vTextPayload.text = '';
 
           vImageURL = vPiSettings.backgroundImage;
           Utils.getDataUri(vImageURL, function(base64Img){

@@ -551,7 +551,7 @@
     "Name": "Clockworks",
     "Icon": "resources/images/pluginIcon",
     "URL": "https://www.krabs.me/streamdeck-plugins",
-    "Version": "1.0.1",
+    "Version": "1.0.2",
     "OS": [
         { "Platform": "windows", "MinimumVersion": "10" },
         { "Platform": "mac", "MinimumVersion": "10.11" }
