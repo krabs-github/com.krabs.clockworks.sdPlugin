@@ -120,6 +120,10 @@ const updateUI = (pl) => {
             if (foundElement && foundElement.type == 'checkbox' && foundElement.value == pl[e]) {
                 document.getElementById(foundElement.getAttribute('id')).checked = true;
             }
+            if (foundElement && foundElement.type == 'file') {
+                document.getElementById("displaySelectedFile").innerHTML = pl[e].split('/').pop();
+                console.log("inside file if/then")
+            }
         }
    })
 }

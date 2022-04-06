@@ -36,7 +36,7 @@
               <div class="sdpi-item-label">Background Image</div>
               <div class="sdpi-item-group file" id="filepickergroup">
                   <input class="sdpi-item-value" type="file" id="vClockworks_Background_Image" accept=".jpg, .jpeg, .png">
-                  <label class="sdpi-file-info" for="vClockworks_Background_Image">no file...</label>
+                  <label class="sdpi-file-info" id="displaySelectedFile" for="vClockworks_Background_Image">no file...</label>
                   <label class="sdpi-file-label" for="vClockworks_Background_Image">Choose file...</label>
                </div>
            </div>
@@ -67,6 +67,8 @@
           function fSetValues() {
             document.getElementById("vClockworks_Font").value = vClockworks_Font;
             document.getElementById("vClockworks_Font_Color").value = vClockworks_Font_Color;
+            //document.getElementById('chosenFile').innerHTML = vClockworks_Background_Image;
+            //document.querySelector('.sdpi-file-info[for="vClockworks_Background_Image"]').textContent = vClockworks_Background_Image[0].value;
             document.getElementById("vClockworks_Background_Color").value = vClockworks_Background_Color;
           }
           fSetValues()
