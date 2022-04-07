@@ -1,7 +1,7 @@
 {
     "Actions": [
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Hour",
             "Name": "Large - 12 Hour - Digit 1",
             "States": [
                 {
@@ -14,12 +14,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Large - 12 Hour - Digit 1",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.hour12largedigit1"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Hour",
             "Name": "Large - 12 Hour - Digit 2",
             "States": [
                 {
@@ -32,12 +32,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Large - 12 Hour - Digit 2",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.hour12largedigit2"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Hour",
             "Name": "Large - 24 Hour - Digit 1",
             "States": [
                 {
@@ -50,12 +50,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Large - 24 Hour - Digit 1",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.hour24largedigit1"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Hour",
             "Name": "Large - 24 Hour - Digit 2",
             "States": [
                 {
@@ -68,12 +68,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Large - 24 Hour - Digit 2",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.hour24largedigit2"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Minute",
             "Name": "Large - Minute - Digit 1",
             "States": [
                 {
@@ -86,12 +86,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Large - Minute - Digit 1",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.minutelargedigit1"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Minute",
             "Name": "Large - Minute - Digit 2",
             "States": [
                 {
@@ -104,12 +104,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Large - Minute - Digit 2",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.minutelargedigit2"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Second",
             "Name": "Large - Second - Digit 1",
             "States": [
                 {
@@ -122,12 +122,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Large - Second - Digit 1",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.secondlargedigit1"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Second",
             "Name": "Large - Second - Digit 2",
             "States": [
                 {
@@ -140,12 +140,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Large - Second - Digit 2",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.secondlargedigit2"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_AMPM",
             "Name": "Large - AM / PM Indicator",
             "States": [
                 {
@@ -158,12 +158,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Large - AM / PM Indicator",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.largeampm"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_AMPM",
             "Name": "Medium - AM / PM Indicator",
             "States": [
                 {
@@ -176,12 +176,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Medium - AM / PM Indicator",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.mediumampm"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Colon",
             "Name": "Large - Seperator ( : )",
             "States": [
                 {
@@ -194,12 +194,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Large - Seperator ( : )",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.largeseperatorcolon"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Dash",
             "Name": "Large - Seperator ( - )",
             "States": [
                 {
@@ -212,12 +212,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Large - Seperator ( - )",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.largeseperatordash"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Dot",
             "Name": "Large - Seperator ( . )",
             "States": [
                 {
@@ -230,12 +230,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Large - Seperator ( . )",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.largeseperatordot"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Slash",
             "Name": "Large - Seperator ( / )",
             "States": [
                 {
@@ -248,12 +248,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Large - Seperator ( / )",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.largeseperatorslash"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Colon",
             "Name": "Medium - Seperator ( : )",
             "States": [
                 {
@@ -266,12 +266,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Medium - Seperator ( : )",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.mediumseperatorcolon"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Dash",
             "Name": "Medium - Seperator ( - )",
             "States": [
                 {
@@ -284,12 +284,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Medium - Seperator ( - )",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.mediumseperatordash"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Dot",
             "Name": "Medium - Seperator ( . )",
             "States": [
                 {
@@ -302,12 +302,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Medium - Seperator ( . )",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.mediumseperatordot"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Slash",
             "Name": "Medium - Seperator ( / )",
             "States": [
                 {
@@ -320,12 +320,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Medium - Seperator ( / )",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.mediumseperatorslash"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Blank",
             "Name": "Blank - Seperator",
             "States": [
                 {
@@ -338,12 +338,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Blank - Seperator",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.seperatorblank"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Hour2Digit",
             "Name": "Medium - 12 Hour - 2 Digit",
             "States": [
                 {
@@ -356,12 +356,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Medium - 12 Hour - 2 Digit",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.hour12medium"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Hour2Digit",
             "Name": "Medium - 24 Hour - 2 Digit",
             "States": [
                 {
@@ -374,12 +374,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Medium - 24 Hour - 2 Digit",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.hour24medium"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Minute2Digit",
             "Name": "Medium - Minutes - 2 Digit",
             "States": [
                 {
@@ -392,12 +392,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Medium - Minutes - 2 Digit",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.minutemedium"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Second2Digit",
             "Name": "Medium - Seconds - 2 Digit",
             "States": [
                 {
@@ -410,12 +410,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Medium - Seconds - 2 Digit",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.secondsmedium"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Month",
             "Name": "Month - Number",
             "States": [
                 {
@@ -428,12 +428,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Month - Number",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.monthmediumnumber"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Month",
             "Name": "Month - Name (3 Chars)",
             "States": [
                 {
@@ -446,12 +446,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Month - Name (3 Chars)",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.monthmediumshort"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Day2Digit",
             "Name": "Day - Number",
             "States": [
                 {
@@ -464,12 +464,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Day - Number",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.daymediumnumber"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Day2Digit",
             "Name": "Day - Name (3 Chars)",
             "States": [
                 {
@@ -482,12 +482,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Day - Name (3 Chars)",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.daymediumshort"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Year2Digit",
             "Name": "Year - First 2 Digits",
             "States": [
                 {
@@ -500,12 +500,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Year - First 2 Digits",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.mediumyeardigitsfirst2"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Year2Digit",
             "Name": "Year - Last 2 Digits",
             "States": [
                 {
@@ -518,12 +518,12 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Year - Last 2 Digits",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.mediumyeardigitslast2"
         },
         {
-            "Icon": "resources/images/actionIcon",
+            "Icon": "resources/images/actionIcon_Year4Digit",
             "Name": "Year - 4 Digits",
             "States": [
                 {
@@ -536,7 +536,7 @@
                 }
               ],
             "SupportedInMultiActions": false,
-            "Tooltip": "action1",
+            "Tooltip": "Year - 4 Digits",
             "PropertyInspectorPath": "PI/generic_pi.html",
             "UUID": "com.krabs.clockworks.mediummyear4digits"
         }
