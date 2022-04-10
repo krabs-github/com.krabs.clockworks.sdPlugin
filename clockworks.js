@@ -264,13 +264,11 @@ const hour12_large_digit2 = {
       } else {
         vPiSettings.font = 'Arial'
       }
-      //---------------------------
       if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
         vPiSettings.weight = 'bold'
       } else {
         vPiSettings.weight = 'normal'
       }
-      //--------------------------
       if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
         vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
       } else {
@@ -293,9 +291,7 @@ const hour12_large_digit2 = {
 
       var vText = vHour12_large_digit2
       let vTextPayload = {};
-      //--------------
       vTextPayload.font = vPiSettings.weight + ' 72px ' + vPiSettings.font;
-      //--------------
       vTextPayload.fillStyle  = vPiSettings.fontcolor;
       //vTextPayload.filter = drop-shadow(h-shadow v-shadow blur spread color)
       vTextPayload.x = 36;
@@ -1021,19 +1017,6 @@ const large_seperator_colon = {
         //$SD.api.setTitle(vKrabs_JSONContext, hour24_large_digit2)
     };
     UpdateDisplay();
-    let vKrabs_IntervalID = jsn.context;
-    function startInterval(func, time) {
-        vKrabs_Intervals[vKrabs_IntervalID] = setInterval(func, time);
-    }
-    function stopInterval() {
-        clearInterval(vKrabs_Intervals[vKrabs_IntervalID]);
-    }
-    if (vKrabs_Intervals[vKrabs_IntervalID]) {
-      stopInterval();
-      startInterval(UpdateDisplay, 1000);
-    } else {
-      startInterval(UpdateDisplay, 1000);
-    }
   },
 };
 
@@ -1096,19 +1079,6 @@ const large_seperator_dash = {
         //$SD.api.setTitle(vKrabs_JSONContext, hour24_large_digit2)
     };
     UpdateDisplay();
-    let vKrabs_IntervalID = jsn.context;
-    function startInterval(func, time) {
-        vKrabs_Intervals[vKrabs_IntervalID] = setInterval(func, time);
-    }
-    function stopInterval() {
-        clearInterval(vKrabs_Intervals[vKrabs_IntervalID]);
-    }
-    if (vKrabs_Intervals[vKrabs_IntervalID]) {
-      stopInterval();
-      startInterval(UpdateDisplay, 1000);
-    } else {
-      startInterval(UpdateDisplay, 1000);
-    }
   },
 };
 
@@ -1171,19 +1141,6 @@ const large_seperator_dot = {
         //$SD.api.setTitle(vKrabs_JSONContext, hour24_large_digit2)
     };
     UpdateDisplay();
-    let vKrabs_IntervalID = jsn.context;
-    function startInterval(func, time) {
-        vKrabs_Intervals[vKrabs_IntervalID] = setInterval(func, time);
-    }
-    function stopInterval() {
-        clearInterval(vKrabs_Intervals[vKrabs_IntervalID]);
-    }
-    if (vKrabs_Intervals[vKrabs_IntervalID]) {
-      stopInterval();
-      startInterval(UpdateDisplay, 1000);
-    } else {
-      startInterval(UpdateDisplay, 1000);
-    }
   },
 };
 
@@ -1246,19 +1203,6 @@ const large_seperator_slash = {
         //$SD.api.setTitle(vKrabs_JSONContext, hour24_large_digit2)
     };
     UpdateDisplay();
-    let vKrabs_IntervalID = jsn.context;
-    function startInterval(func, time) {
-        vKrabs_Intervals[vKrabs_IntervalID] = setInterval(func, time);
-    }
-    function stopInterval() {
-        clearInterval(vKrabs_Intervals[vKrabs_IntervalID]);
-    }
-    if (vKrabs_Intervals[vKrabs_IntervalID]) {
-      stopInterval();
-      startInterval(UpdateDisplay, 1000);
-    } else {
-      startInterval(UpdateDisplay, 1000);
-    }
   },
 };
 
@@ -1322,19 +1266,6 @@ const medium_seperator_colon = {
         //$SD.api.setTitle(vKrabs_JSONContext, hour24_large_digit2)
     };
     UpdateDisplay();
-    let vKrabs_IntervalID = jsn.context;
-    function startInterval(func, time) {
-        vKrabs_Intervals[vKrabs_IntervalID] = setInterval(func, time);
-    }
-    function stopInterval() {
-        clearInterval(vKrabs_Intervals[vKrabs_IntervalID]);
-    }
-    if (vKrabs_Intervals[vKrabs_IntervalID]) {
-      stopInterval();
-      startInterval(UpdateDisplay, 1000);
-    } else {
-      startInterval(UpdateDisplay, 1000);
-    }
   },
 };
 
@@ -1397,19 +1328,6 @@ const medium_seperator_dash = {
         //$SD.api.setTitle(vKrabs_JSONContext, hour24_large_digit2)
     };
     UpdateDisplay();
-    let vKrabs_IntervalID = jsn.context;
-    function startInterval(func, time) {
-        vKrabs_Intervals[vKrabs_IntervalID] = setInterval(func, time);
-    }
-    function stopInterval() {
-        clearInterval(vKrabs_Intervals[vKrabs_IntervalID]);
-    }
-    if (vKrabs_Intervals[vKrabs_IntervalID]) {
-      stopInterval();
-      startInterval(UpdateDisplay, 1000);
-    } else {
-      startInterval(UpdateDisplay, 1000);
-    }
   },
 };
 
@@ -1472,19 +1390,6 @@ const medium_seperator_dot = {
         //$SD.api.setTitle(vKrabs_JSONContext, hour24_large_digit2)
     };
     UpdateDisplay();
-    let vKrabs_IntervalID = jsn.context;
-    function startInterval(func, time) {
-        vKrabs_Intervals[vKrabs_IntervalID] = setInterval(func, time);
-    }
-    function stopInterval() {
-        clearInterval(vKrabs_Intervals[vKrabs_IntervalID]);
-    }
-    if (vKrabs_Intervals[vKrabs_IntervalID]) {
-      stopInterval();
-      startInterval(UpdateDisplay, 1000);
-    } else {
-      startInterval(UpdateDisplay, 1000);
-    }
   },
 };
 
@@ -1547,19 +1452,6 @@ const medium_seperator_slash = {
         //$SD.api.setTitle(vKrabs_JSONContext, hour24_large_digit2)
     };
     UpdateDisplay();
-    let vKrabs_IntervalID = jsn.context;
-    function startInterval(func, time) {
-        vKrabs_Intervals[vKrabs_IntervalID] = setInterval(func, time);
-    }
-    function stopInterval() {
-        clearInterval(vKrabs_Intervals[vKrabs_IntervalID]);
-    }
-    if (vKrabs_Intervals[vKrabs_IntervalID]) {
-      stopInterval();
-      startInterval(UpdateDisplay, 1000);
-    } else {
-      startInterval(UpdateDisplay, 1000);
-    }
   },
 };
 
@@ -1622,19 +1514,6 @@ const seperator_blank = {
         //$SD.api.setTitle(vKrabs_JSONContext, hour24_large_digit2)
     };
     UpdateDisplay();
-    let vKrabs_IntervalID = jsn.context;
-    function startInterval(func, time) {
-        vKrabs_Intervals[vKrabs_IntervalID] = setInterval(func, time);
-    }
-    function stopInterval() {
-        clearInterval(vKrabs_Intervals[vKrabs_IntervalID]);
-    }
-    if (vKrabs_Intervals[vKrabs_IntervalID]) {
-      stopInterval();
-      startInterval(UpdateDisplay, 1000);
-    } else {
-      startInterval(UpdateDisplay, 1000);
-    }
   },
 };
 
