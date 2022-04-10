@@ -164,6 +164,11 @@ const hour12_large_digit1 = {
         } else {
           vPiSettings.font = 'Arial'
         }
+        if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+          vPiSettings.weight = 'bold'
+        } else {
+          vPiSettings.weight = 'normal'
+        }
         if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
           vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
         } else {
@@ -188,7 +193,7 @@ const hour12_large_digit1 = {
         var vText = vHour12_large_digit1
         if (vText != '0') {
           let vTextPayload = {};
-          vTextPayload.font = 'bold 72px ' + vPiSettings.font;
+          vTextPayload.font = vPiSettings.weight + ' 72px ' + vPiSettings.font;
           vTextPayload.fillStyle  = vPiSettings.fontcolor;
           vTextPayload.x = 36;
           vTextPayload.y = 41;
@@ -206,7 +211,7 @@ const hour12_large_digit1 = {
           //$SD.api.setTitle(vKrabs_JSONContext, vHour12_large_digit1)
         } else {
           let vTextPayload = {};
-          vTextPayload.font = 'bold 72px ' + vPiSettings.font;
+          vTextPayload.font = vPiSettings.weight + ' 72px ' + vPiSettings.font;
           vTextPayload.fillStyle  = vPiSettings.fontcolor;
           vTextPayload.x = 36;
           vTextPayload.y = 41;
@@ -259,6 +264,13 @@ const hour12_large_digit2 = {
       } else {
         vPiSettings.font = 'Arial'
       }
+      //---------------------------
+      if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+        vPiSettings.weight = 'bold'
+      } else {
+        vPiSettings.weight = 'normal'
+      }
+      //--------------------------
       if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
         vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
       } else {
@@ -281,8 +293,11 @@ const hour12_large_digit2 = {
 
       var vText = vHour12_large_digit2
       let vTextPayload = {};
-      vTextPayload.font = 'bold 72px ' + vPiSettings.font;
+      //--------------
+      vTextPayload.font = vPiSettings.weight + ' 72px ' + vPiSettings.font;
+      //--------------
       vTextPayload.fillStyle  = vPiSettings.fontcolor;
+      //vTextPayload.filter = drop-shadow(h-shadow v-shadow blur spread color)
       vTextPayload.x = 36;
       vTextPayload.y = 41;
       vTextPayload.textAlign = 'center';
@@ -332,6 +347,11 @@ const hour24_large_digit1 = {
       } else {
         vPiSettings.font = 'Arial'
       }
+      if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+        vPiSettings.weight = 'bold'
+      } else {
+        vPiSettings.weight = 'normal'
+      }
       if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
         vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
       } else {
@@ -356,7 +376,7 @@ const hour24_large_digit1 = {
       var vText = hour24_large_digit1
       if (vText != '0') {
         let vTextPayload = {};
-        vTextPayload.font = 'bold 72px ' + vPiSettings.font;
+        vTextPayload.font = vPiSettings.weight + ' 72px ' + vPiSettings.font;
         vTextPayload.fillStyle  = vPiSettings.fontcolor;
         vTextPayload.x = 36;
         vTextPayload.y = 41;
@@ -407,6 +427,11 @@ const hour24_large_digit2 = {
       } else {
         vPiSettings.font = 'Arial'
       }
+      if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+        vPiSettings.weight = 'bold'
+      } else {
+        vPiSettings.weight = 'normal'
+      }
       if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
         vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
       } else {
@@ -429,7 +454,7 @@ const hour24_large_digit2 = {
 
       var vText = hour24_large_digit2
       let vTextPayload = {};
-      vTextPayload.font = 'bold 72px ' + vPiSettings.font;
+      vTextPayload.font = vPiSettings.weight + ' 72px ' + vPiSettings.font;
       vTextPayload.fillStyle  = vPiSettings.fontcolor;
       vTextPayload.x = 36;
       vTextPayload.y = 41;
@@ -482,6 +507,11 @@ const minute_large_digit1 = {
       } else {
         vPiSettings.font = 'Arial'
       }
+      if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+        vPiSettings.weight = 'bold'
+      } else {
+        vPiSettings.weight = 'normal'
+      }
       if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
         vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
       } else {
@@ -504,7 +534,7 @@ const minute_large_digit1 = {
 
       var vText = minute_large_digit1
       let vTextPayload = {};
-      vTextPayload.font = 'bold 72px ' + vPiSettings.font;
+      vTextPayload.font = vPiSettings.weight + ' 72px ' + vPiSettings.font;
       vTextPayload.fillStyle  = vPiSettings.fontcolor;
       vTextPayload.x = 36;
       vTextPayload.y = 41;
@@ -556,6 +586,11 @@ const minute_large_digit2 = {
       } else {
         vPiSettings.font = 'Arial'
       }
+      if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+        vPiSettings.weight = 'bold'
+      } else {
+        vPiSettings.weight = 'normal'
+      }
       if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
         vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
       } else {
@@ -578,7 +613,7 @@ const minute_large_digit2 = {
 
       var vText = minute_large_digit2
       let vTextPayload = {};
-      vTextPayload.font = 'bold 72px ' + vPiSettings.font;
+      vTextPayload.font = vPiSettings.weight + ' 72px ' + vPiSettings.font;
       vTextPayload.fillStyle  = vPiSettings.fontcolor;
       vTextPayload.x = 36;
       vTextPayload.y = 41;
@@ -630,6 +665,11 @@ const second_large_digit1 = {
       } else {
         vPiSettings.font = 'Arial'
       }
+      if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+        vPiSettings.weight = 'bold'
+      } else {
+        vPiSettings.weight = 'normal'
+      }
       if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
         vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
       } else {
@@ -652,7 +692,7 @@ const second_large_digit1 = {
 
       var vText = second_large_digit1
       let vTextPayload = {};
-      vTextPayload.font = 'bold 72px ' + vPiSettings.font;
+      vTextPayload.font = vPiSettings.weight + ' 72px ' + vPiSettings.font;
       vTextPayload.fillStyle  = vPiSettings.fontcolor;
       vTextPayload.x = 36;
       vTextPayload.y = 41;
@@ -704,6 +744,11 @@ const second_large_digit2 = {
       } else {
         vPiSettings.font = 'Arial'
       }
+      if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+        vPiSettings.weight = 'bold'
+      } else {
+        vPiSettings.weight = 'normal'
+      }
       if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
         vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
       } else {
@@ -726,7 +771,7 @@ const second_large_digit2 = {
 
       var vText = second_large_digit2
       let vTextPayload = {};
-      vTextPayload.font = 'bold 72px ' + vPiSettings.font;
+      vTextPayload.font = vPiSettings.weight + ' 72px ' + vPiSettings.font;
       vTextPayload.fillStyle  = vPiSettings.fontcolor;
       vTextPayload.x = 36;
       vTextPayload.y = 41;
@@ -779,6 +824,11 @@ const large_ampm = {
       } else {
         vPiSettings.font = 'Arial'
       }
+      if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+        vPiSettings.weight = 'bold'
+      } else {
+        vPiSettings.weight = 'normal'
+      }
       if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
         vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
       } else {
@@ -799,7 +849,7 @@ const large_ampm = {
 
       var vText = large_ampm
       let vTextPayload = {};
-      vTextPayload.font = 'bold 36px ' + vPiSettings.font;
+      vTextPayload.font = vPiSettings.weight + ' 36px ' + vPiSettings.font;
       vTextPayload.fillStyle  = vPiSettings.fontcolor;
       vTextPayload.x = 36;
       vTextPayload.y = 72;
@@ -851,6 +901,11 @@ const medium_ampm = {
       } else {
         vPiSettings.font = 'Arial'
       }
+      if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+        vPiSettings.weight = 'bold'
+      } else {
+        vPiSettings.weight = 'normal'
+      }
       if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
         vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
       } else {
@@ -871,7 +926,7 @@ const medium_ampm = {
 
       var vText = medium_ampm
       let vTextPayload = {};
-      vTextPayload.font = 'bold 28px ' + vPiSettings.font;
+      vTextPayload.font = vPiSettings.weight + ' 28px ' + vPiSettings.font;
       vTextPayload.fillStyle  = vPiSettings.fontcolor;
       vTextPayload.x = 36;
       vTextPayload.y = 60;
@@ -925,6 +980,11 @@ const large_seperator_colon = {
       } else {
         vPiSettings.font = 'Arial'
       }
+      if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+        vPiSettings.weight = 'bold'
+      } else {
+        vPiSettings.weight = 'normal'
+      }
       if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
         vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
       } else {
@@ -942,7 +1002,7 @@ const large_seperator_colon = {
       }
       var vText = ':';
       let vTextPayload = {};
-      vTextPayload.font = 'bold 48px ' + vPiSettings.font;
+      vTextPayload.font = vPiSettings.weight + ' 48px ' + vPiSettings.font;
       vTextPayload.fillStyle  = vPiSettings.fontcolor;
       vTextPayload.x = 36;
       vTextPayload.y = 36;
@@ -995,6 +1055,11 @@ const large_seperator_dash = {
       } else {
         vPiSettings.font = 'Arial'
       }
+      if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+        vPiSettings.weight = 'bold'
+      } else {
+        vPiSettings.weight = 'normal'
+      }
       if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
         vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
       } else {
@@ -1012,7 +1077,7 @@ const large_seperator_dash = {
       }
       var vText = '-';
       let vTextPayload = {};
-      vTextPayload.font = 'bold 48px ' + vPiSettings.font;
+      vTextPayload.font = vPiSettings.weight + ' 48px ' + vPiSettings.font;
       vTextPayload.fillStyle  = vPiSettings.fontcolor;
       vTextPayload.x = 36;
       vTextPayload.y = 36;
@@ -1065,6 +1130,11 @@ const large_seperator_dot = {
       } else {
         vPiSettings.font = 'Arial'
       }
+      if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+        vPiSettings.weight = 'bold'
+      } else {
+        vPiSettings.weight = 'normal'
+      }
       if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
         vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
       } else {
@@ -1082,7 +1152,7 @@ const large_seperator_dot = {
       }
       var vText = '.';
       let vTextPayload = {};
-      vTextPayload.font = 'bold 48px ' + vPiSettings.font;
+      vTextPayload.font = vPiSettings.weight + ' 48px ' + vPiSettings.font;
       vTextPayload.fillStyle  = vPiSettings.fontcolor;
       vTextPayload.x = 36;
       vTextPayload.y = 48;
@@ -1135,6 +1205,11 @@ const large_seperator_slash = {
       } else {
         vPiSettings.font = 'Arial'
       }
+      if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+        vPiSettings.weight = 'bold'
+      } else {
+        vPiSettings.weight = 'normal'
+      }
       if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
         vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
       } else {
@@ -1152,7 +1227,7 @@ const large_seperator_slash = {
       }
       var vText = '/';
       let vTextPayload = {};
-      vTextPayload.font = 'bold 48px ' + vPiSettings.font;
+      vTextPayload.font = vPiSettings.weight + ' 48px ' + vPiSettings.font;
       vTextPayload.fillStyle  = vPiSettings.fontcolor;
       vTextPayload.x = 36;
       vTextPayload.y = 36;
@@ -1206,6 +1281,11 @@ const medium_seperator_colon = {
       } else {
         vPiSettings.font = 'Arial'
       }
+      if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+        vPiSettings.weight = 'bold'
+      } else {
+        vPiSettings.weight = 'normal'
+      }
       if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
         vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
       } else {
@@ -1223,7 +1303,7 @@ const medium_seperator_colon = {
       }
       var vText = ':';
       let vTextPayload = {};
-      vTextPayload.font = 'bold 30px ' + vPiSettings.font;
+      vTextPayload.font = vPiSettings.weight + ' 30px ' + vPiSettings.font;
       vTextPayload.fillStyle  = vPiSettings.fontcolor;
       vTextPayload.x = 36;
       vTextPayload.y = 36;
@@ -1276,6 +1356,11 @@ const medium_seperator_dash = {
       } else {
         vPiSettings.font = 'Arial'
       }
+      if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+        vPiSettings.weight = 'bold'
+      } else {
+        vPiSettings.weight = 'normal'
+      }
       if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
         vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
       } else {
@@ -1293,7 +1378,7 @@ const medium_seperator_dash = {
       }
       var vText = '-';
       let vTextPayload = {};
-      vTextPayload.font = 'bold 30px ' + vPiSettings.font;
+      vTextPayload.font = vPiSettings.weight + ' 30px ' + vPiSettings.font;
       vTextPayload.fillStyle  = vPiSettings.fontcolor;
       vTextPayload.x = 36;
       vTextPayload.y = 36;
@@ -1346,6 +1431,11 @@ const medium_seperator_dot = {
       } else {
         vPiSettings.font = 'Arial'
       }
+      if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+        vPiSettings.weight = 'bold'
+      } else {
+        vPiSettings.weight = 'normal'
+      }
       if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
         vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
       } else {
@@ -1363,7 +1453,7 @@ const medium_seperator_dot = {
       }
       var vText = '.';
       let vTextPayload = {};
-      vTextPayload.font = 'bold 30px ' + vPiSettings.font;
+      vTextPayload.font = vPiSettings.weight + ' 30px ' + vPiSettings.font;
       vTextPayload.fillStyle  = vPiSettings.fontcolor;
       vTextPayload.x = 36;
       vTextPayload.y = 48;
@@ -1416,6 +1506,11 @@ const medium_seperator_slash = {
       } else {
         vPiSettings.font = 'Arial'
       }
+      if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+        vPiSettings.weight = 'bold'
+      } else {
+        vPiSettings.weight = 'normal'
+      }
       if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
         vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
       } else {
@@ -1433,7 +1528,7 @@ const medium_seperator_slash = {
       }
       var vText = '/';
       let vTextPayload = {};
-      vTextPayload.font = 'bold 30px ' + vPiSettings.font;
+      vTextPayload.font = vPiSettings.weight + ' 30px ' + vPiSettings.font;
       vTextPayload.fillStyle  = vPiSettings.fontcolor;
       vTextPayload.x = 36;
       vTextPayload.y = 41;
@@ -1486,6 +1581,11 @@ const seperator_blank = {
       } else {
         vPiSettings.font = 'Arial'
       }
+      if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+        vPiSettings.weight = 'bold'
+      } else {
+        vPiSettings.weight = 'normal'
+      }
       if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
         vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
       } else {
@@ -1503,7 +1603,7 @@ const seperator_blank = {
       }
       var vText = '';
       let vTextPayload = {};
-      vTextPayload.font = 'bold 30px ' + vPiSettings.font;
+      vTextPayload.font = vPiSettings.weight + ' 30px ' + vPiSettings.font;
       vTextPayload.fillStyle  = vPiSettings.fontcolor;
       vTextPayload.x = 36;
       vTextPayload.y = 48;
@@ -1558,6 +1658,11 @@ const hour12_medium = {
         } else {
           vPiSettings.font = 'Arial'
         }
+        if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+          vPiSettings.weight = 'bold'
+        } else {
+          vPiSettings.weight = 'normal'
+        }
         if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
           vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
         } else {
@@ -1578,7 +1683,7 @@ const hour12_medium = {
 
         var vText = hour12_medium
         let vTextPayload = {};
-        vTextPayload.font = 'bold 48px ' + vPiSettings.font;
+        vTextPayload.font = vPiSettings.weight + ' 48px ' + vPiSettings.font;
         vTextPayload.fillStyle  = vPiSettings.fontcolor;
         vTextPayload.x = 64;
         vTextPayload.y = 41;
@@ -1630,6 +1735,11 @@ const hour24_medium = {
         } else {
           vPiSettings.font = 'Arial'
         }
+        if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+          vPiSettings.weight = 'bold'
+        } else {
+          vPiSettings.weight = 'normal'
+        }
         if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
           vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
         } else {
@@ -1650,7 +1760,7 @@ const hour24_medium = {
 
         var vText = hour24_medium
         let vTextPayload = {};
-        vTextPayload.font = 'bold 48px ' + vPiSettings.font;
+        vTextPayload.font = vPiSettings.weight + ' 48px ' + vPiSettings.font;
         vTextPayload.fillStyle  = vPiSettings.fontcolor;
         vTextPayload.x = 64;
         vTextPayload.y = 41;
@@ -1702,6 +1812,11 @@ const minute_medium = {
       } else {
         vPiSettings.font = 'Arial'
       }
+      if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+        vPiSettings.weight = 'bold'
+      } else {
+        vPiSettings.weight = 'normal'
+      }
       if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
         vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
       } else {
@@ -1724,7 +1839,7 @@ const minute_medium = {
 
       var vText = minute_medium
       let vTextPayload = {};
-      vTextPayload.font = 'bold 48px ' + vPiSettings.font;
+      vTextPayload.font = vPiSettings.weight + ' 48px ' + vPiSettings.font;
       vTextPayload.fillStyle  = vPiSettings.fontcolor;
       vTextPayload.x = 8;
       vTextPayload.y = 41;
@@ -1776,6 +1891,11 @@ const seconds_medium = {
       } else {
         vPiSettings.font = 'Arial'
       }
+      if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+        vPiSettings.weight = 'bold'
+      } else {
+        vPiSettings.weight = 'normal'
+      }
       if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
         vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
       } else {
@@ -1798,7 +1918,7 @@ const seconds_medium = {
 
       var vText = seconds_medium
       let vTextPayload = {};
-      vTextPayload.font = 'bold 48px ' + vPiSettings.font;
+      vTextPayload.font = vPiSettings.weight + ' 48px ' + vPiSettings.font;
       vTextPayload.fillStyle  = vPiSettings.fontcolor;
       vTextPayload.x = 8;
       vTextPayload.y = 41;
@@ -1853,6 +1973,11 @@ const month_medium_number = {
         } else {
           vPiSettings.font = 'Arial'
         }
+        if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+          vPiSettings.weight = 'bold'
+        } else {
+          vPiSettings.weight = 'normal'
+        }
         if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
           vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
         } else {
@@ -1874,7 +1999,7 @@ const month_medium_number = {
         var vText = month_medium_number
         if (vText != '0') {
           let vTextPayload = {};
-          vTextPayload.font = 'bold 30px ' + vPiSettings.font;
+          vTextPayload.font = vPiSettings.weight + ' 30px ' + vPiSettings.font;
           vTextPayload.fillStyle  = vPiSettings.fontcolor;
           vTextPayload.x = 36;
           vTextPayload.y = 41;
@@ -1927,6 +2052,11 @@ const month_medium_short = {
         } else {
           vPiSettings.font = 'Arial'
         }
+        if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+          vPiSettings.weight = 'bold'
+        } else {
+          vPiSettings.weight = 'normal'
+        }
         if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
           vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
         } else {
@@ -1948,7 +2078,7 @@ const month_medium_short = {
         var vText = month_medium_short
         if (vText != '0') {
           let vTextPayload = {};
-          vTextPayload.font = 'bold 30px ' + vPiSettings.font;
+          vTextPayload.font = vPiSettings.weight + ' 30px ' + vPiSettings.font;
           vTextPayload.fillStyle  = vPiSettings.fontcolor;
           vTextPayload.x = 36;
           vTextPayload.y = 41;
@@ -2003,6 +2133,11 @@ const day_medium_number = {
         } else {
           vPiSettings.font = 'Arial'
         }
+        if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+          vPiSettings.weight = 'bold'
+        } else {
+          vPiSettings.weight = 'normal'
+        }
         if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
           vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
         } else {
@@ -2024,7 +2159,7 @@ const day_medium_number = {
         var vText = day_medium_number
         if (vText != '0') {
           let vTextPayload = {};
-          vTextPayload.font = 'bold 30px ' + vPiSettings.font;
+          vTextPayload.font = vPiSettings.weight + ' 30px ' + vPiSettings.font;
           vTextPayload.fillStyle  = vPiSettings.fontcolor;
           vTextPayload.x = 36;
           vTextPayload.y = 41;
@@ -2077,6 +2212,11 @@ const day_medium_short = {
         } else {
           vPiSettings.font = 'Arial'
         }
+        if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+          vPiSettings.weight = 'bold'
+        } else {
+          vPiSettings.weight = 'normal'
+        }
         if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
           vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
         } else {
@@ -2098,7 +2238,7 @@ const day_medium_short = {
         var vText = day_medium_short
         if (vText != '0') {
           let vTextPayload = {};
-          vTextPayload.font = 'bold 30px ' + vPiSettings.font;
+          vTextPayload.font = vPiSettings.weight + ' 30px ' + vPiSettings.font;
           vTextPayload.fillStyle  = vPiSettings.fontcolor;
           vTextPayload.x = 36;
           vTextPayload.y = 41;
@@ -2153,6 +2293,11 @@ const medium_year_digits_first2 = {
         } else {
           vPiSettings.font = 'Arial'
         }
+        if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+          vPiSettings.weight = 'bold'
+        } else {
+          vPiSettings.weight = 'normal'
+        }
         if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
           vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
         } else {
@@ -2174,7 +2319,7 @@ const medium_year_digits_first2 = {
 
         var vText = medium_year_digits_first2
         let vTextPayload = {};
-        vTextPayload.font = 'bold 30px ' + vPiSettings.font;
+        vTextPayload.font = vPiSettings.weight + ' 30px ' + vPiSettings.font;
         vTextPayload.fillStyle  = vPiSettings.fontcolor;
         vTextPayload.x = 36;
         vTextPayload.y = 41;
@@ -2226,6 +2371,11 @@ const medium_year_digits_last2 = {
         } else {
           vPiSettings.font = 'Arial'
         }
+        if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+          vPiSettings.weight = 'bold'
+        } else {
+          vPiSettings.weight = 'normal'
+        }
         if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
           vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
         } else {
@@ -2247,7 +2397,7 @@ const medium_year_digits_last2 = {
 
         var vText = medium_year_digits_last2
         let vTextPayload = {};
-        vTextPayload.font = 'bold 30px ' + vPiSettings.font;
+        vTextPayload.font = vPiSettings.weight + ' 30px ' + vPiSettings.font;
         vTextPayload.fillStyle  = vPiSettings.fontcolor;
         vTextPayload.x = 36;
         vTextPayload.y = 41;
@@ -2299,6 +2449,11 @@ const mediumm_year_4_digits = {
         } else {
           vPiSettings.font = 'Arial'
         }
+        if (vSelf.settings[jsn.context].vClockworks_Font_Bold && vSelf.settings[jsn.context].vClockworks_Font_Bold == 'true') {
+          vPiSettings.weight = 'bold'
+        } else {
+          vPiSettings.weight = 'normal'
+        }
         if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
           vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
         } else {
@@ -2319,7 +2474,7 @@ const mediumm_year_4_digits = {
 
         var vText = mediumm_year_4_digits
         let vTextPayload = {};
-        vTextPayload.font = 'bold 30px ' + vPiSettings.font;
+        vTextPayload.font = vPiSettings.weight + ' 30px ' + vPiSettings.font;
         vTextPayload.fillStyle  = vPiSettings.fontcolor;
         vTextPayload.x = 36;
         vTextPayload.y = 41;
