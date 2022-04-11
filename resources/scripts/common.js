@@ -594,8 +594,10 @@ Utils.getDataUri = function (url, callback, inCanvas, inFillcolor, vOverlay, vFi
         if (vTextPayload) {
             ctx.save();
             ctx.font = vTextPayload.font;
+            ctx.shadowBlur =  vTextPayload.shadowSize;
+            ctx.shadowColor =  vTextPayload.shadowColor;
             ctx.textBaseline = vTextPayload.textBaseline;
-            ctx.textAlign = vTextPayload.textAlign          
+            ctx.textAlign = vTextPayload.textAlign
             ctx.fillStyle = vTextPayload.fillStyle;
             ctx.fillText(vTextPayload.text, vTextPayload.x, vTextPayload.y);
             ctx.restore();

@@ -269,6 +269,13 @@ const hour12_large_digit2 = {
       } else {
         vPiSettings.weight = 'normal'
       }
+      if (vSelf.settings[jsn.context].vClockworks_Font_DropShadow && vSelf.settings[jsn.context].vClockworks_Font_DropShadow == 'true') {
+        vPiSettings.shadowSize = '15'
+        vPiSettings.shadowColor = '#000000DD'
+      } else {
+        vPiSettings.shadowSize = '0'
+        vPiSettings.shadowColor = '#000000DD'
+      }
       if (vSelf.settings[jsn.context].vClockworks_Font_Color) {
         vPiSettings.fontcolor = vSelf.settings[jsn.context].vClockworks_Font_Color
       } else {
@@ -293,7 +300,9 @@ const hour12_large_digit2 = {
       let vTextPayload = {};
       vTextPayload.font = vPiSettings.weight + ' 72px ' + vPiSettings.font;
       vTextPayload.fillStyle  = vPiSettings.fontcolor;
-      //vTextPayload.filter = drop-shadow(h-shadow v-shadow blur spread color)
+      // Hex value increments 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
+      vTextPayload.shadowSize = vPiSettings.shadowSize;
+      vTextPayload.shadowColor = vPiSettings.shadowColor;
       vTextPayload.x = 36;
       vTextPayload.y = 41;
       vTextPayload.textAlign = 'center';
