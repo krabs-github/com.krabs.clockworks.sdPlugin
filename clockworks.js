@@ -379,7 +379,6 @@ const hour24_large_digit1 = {
       hour24_large_digit1 = hour24_large_digit1.slice(-2).charAt(0)
 
       var vText = hour24_large_digit1
-      if (vText != '0') {
         let vTextPayload = {};
         vTextPayload.font = vPiSettings.weight + ' 72px ' + vPiSettings.font;
         vTextPayload.fillStyle  = vPiSettings.fontcolor;
@@ -396,7 +395,6 @@ const hour24_large_digit1 = {
         $SD.api.setImage(jsn.context, vImageBase64);
       }, undefined, vTextPayload.backgroundColor, undefined, undefined, vTextPayload);
         //$SD.api.setTitle(vKrabs_JSONContext, hour24_large_digit1)
-      }
     };
     UpdateDisplay();
     let vKrabs_IntervalID = jsn.context;
